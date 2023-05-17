@@ -1,0 +1,156 @@
+*{
+    margin: 0rem;
+}
+.main{
+background-image: linear-gradient(to right,#20b2ab9a,rgba(20, 211, 211, 0.623)), url("photo.jpg") ;
+background-size: cover;
+width: 100%;
+height:38.55rem;
+
+}
+.left{
+    text-transform: uppercase;
+    font-family: 'Segoe print';
+    padding: 5rem;
+    overflow: hidden;
+}
+.happy, .birthday ,.budda{
+    background-image: linear-gradient(to right ,rgb(247, 19, 236),rgb(243, 9, 173));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    font-size: 3.5rem;
+    margin-bottom: -10px;
+
+    
+}
+img{
+    width:15rem;
+    margin-bottom: -20px;
+    transform: translateX(-20px);
+}
+.happy{
+    animation: move 2s;
+    animation-delay: .2s;
+    animation-iteration-count: 5;
+
+}
+
+.birthday{
+    transform: translateX(3rem);
+    animation: move2 2s ;
+    animation-delay: .2s;
+    animation-iteration-count: 5;
+}
+.budda{
+    animation:move3 2s;
+    transform: translateX(7rem);
+    animation-delay: .2s;
+    animation-iteration-count: 5;
+}
+.text-box {
+   text-align: center;
+   margin-top: 3rem;
+}
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: rgb(223, 33, 182);
+    color: #0c0707;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #d80dd8;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+@-webkit-keyframes move{
+    0%,100%{
+        transform: translateX(0);
+        
+    }
+    50%{
+        transform:translateX(5rem);
+    }
+}
+@-webkit-keyframes move2{
+    0%,100%{
+        transform: translateX(3rem);
+        
+    }
+    50%{
+        transform:translateX(-5rem);
+    }
+}
+@-webkit-keyframes move3 {
+    0%,100%{
+        transform: translateX(7rem);
+        
+    }
+    50%{
+        transform:translateX(9rem);
+    }
+}
+
+
+    
+
+  

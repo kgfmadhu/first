@@ -1,0 +1,60 @@
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  .counter {
+    transition: --num 3s;
+    counter-set: num var(--num);
+    font: 600 40px system-ui;
+    padding-left: 15rem;
+    padding-top: 2rem;
+    font-size: 5rem;
+    color: rgb(247, 63, 7);
+    
+   
+  }
+  .counter::after {
+    content: counter(num);
+  }
+  
+  .counter:hover {
+    --num: 19;
+  }
+  .flex_right{
+    text-align: center;
+  }
+  .inner{
+    padding-left: 6rem;
+    font-size: 5rem;
+    color: rgb(247, 55, 7);
+  }
+  .inner_text{
+   padding-left: 16rem;
+    color: rgb(247, 63, 7);
+    margin: 0rem;
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    
+    
+
+  }
+   .counter:hover .inner_text{
+    animation:hide 5s;
+  }
+  @-webkit-keyframes hide{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+  }
+  
+  
+  
+  

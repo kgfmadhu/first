@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="birthday_html_4.css">
+<style>
+  
+    body{
+      background-image: linear-gradient(to right,rgba(4, 211, 38, 0.658),rgba(68, 245, 9, 0.527)) ,url("2.jpg");
+      background-size: cover;
+      
+
+    }
+    .main{
+        height: 17.5rem;
+    }
+    .flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    img{
+      border-radius: 5px;
+    }
+
+.flip-box {
+  background-color: transparent;
+  width: 220px;
+  height: 305px;
+  perspective: 1000px;
+  border-radius: 5px;
+  
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: inherit;
+  box-shadow: 0px 5px 20px black;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+p{
+  margin-bottom: -.7rem;
+  margin-left: 6rem;
+  letter-spacing: .23rem;
+  font-size: 1.6rem;
+  color: rgb(247, 63, 7);
+  font-weight: 900;
+  transition: all .2s;
+  animation-name: counter;
+}
+
+.second{
+  margin-left: 12rem;
+}
+.fourth{
+  margin-left: 12rem;
+}
+.below{
+  width: 100%;
+  height: 30%;
+  background-color: aliceblue;
+  margin-top: -.3rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: #bbbbbb;
+
+}
+.birthday{
+  padding-left: .8rem;
+  background-color: rgb(160, 153, 144);
+  color:rgb(248, 163, 6)
+  
+ 
+}
+.happy{
+  background-color: rgb(255, 166, 0);
+}
+.budda{
+  background-color: rgb(255, 255, 255);
+  color:rgb(255, 115, 0);
+}
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: rgb(247, 63, 7);
+    color: #0c0707;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: rgb(247, 63, 7);
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.text-box{
+  margin-top: 10.3rem;
+  margin-left: 7.5rem;
+}
+
+</style>
+</head>
+<body>
+  <div class="flex_main" style="display: flex; ">
+    <div class="main">
+      <p class="first">Your eyes makes me Confident</p>
+      <p class="second"> Your smile makes me Happy</p>
+      <p class="third">Your lips makes me ....</p>
+      <p class="fourth">You defines the Beauty</p>
+      <p class="five">Trust me i will make u Happy</p>
+
+    </div>
+    <div class="flex_right" >
+      <div class="counter">
+      </div>
+       <h1 class="inner_text">years</h1>
+
+    </div>
+    <div class="text-box">
+      <a href="test.html" class="btn btn-white btn-animate">surprice</a>
+  </div>
+  </div>
+    
+    <div class="flex">
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="8.png" style="width:100%;height:70%">
+            <div class="happy below">happy</div>
+          </div>
+          <div class="flip-box-back">
+            <img src="14.jpg" style="width:220px;height:305px;overflow: hidden;">
+          </div>
+        </div>
+      </div>
+        
+
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="9.png" style="width:100%;height:70%">
+            <div class="birthday below">birthday</div>
+          </div>
+          <div class="flip-box-back">
+            <img src="12.jpg" style="width:220px;height:305px">
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="10.png" style="width:100%;height:70%">
+            <div class="budda below">budda</div>
+          </div>
+          <div class="flip-box-back">
+            <img src="13.jpg" style="width:220px;height:305px;border-bottom-left-radius:0px ;border-bottom-right-radius:0 ;">
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
